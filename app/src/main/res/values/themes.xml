@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Buscaminas" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#AFC97E</item>
+        <item name="colorPrimaryVariant">#D4E6B5</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#00867d</item>
+        <item name="colorSecondaryVariant">#E2D686</item>
+        <item name="colorOnSecondary">#E2D686</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">#877B66</item>
+        <item name="android:fontFamily">@font/fuente1</item>
+    </style>
+</resources>
