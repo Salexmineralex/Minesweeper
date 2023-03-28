@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -145,6 +146,9 @@ public class Buscaminas extends AppCompatActivity implements Runnable {
 
         System.out.println(Minas);
 
+        DisplayMetrics displayMetrics = new DisplayMetrics();
+        getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
+
         grl.setColumnCount(filasC);
 
         grl.setRowCount(filasC);
@@ -165,7 +169,7 @@ public class Buscaminas extends AppCompatActivity implements Runnable {
             Button bt = new Button(this);
 
 
-            bt.setLayoutParams(new ViewGroup.LayoutParams(1070 / numColumnas, 1000 / numFilas));
+            bt.setLayoutParams(new ViewGroup.LayoutParams((displayMetrics.widthPixels) / numColumnas, (displayMetrics.heightPixels/2) / numFilas));
 
             bt.setId(r);
 

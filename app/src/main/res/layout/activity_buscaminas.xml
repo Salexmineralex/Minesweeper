@@ -11,8 +11,8 @@
 
     <GridLayout
         android:id="@+id/LayoutGrid1"
-        android:layout_width="410dp"
-        android:layout_height="460dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:columnCount="8"
         android:orientation="horizontal"
         android:rowCount="8">
